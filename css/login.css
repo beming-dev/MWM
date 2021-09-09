@@ -1,0 +1,296 @@
+:root{
+    --login-font-01 : 1.6rem;
+    --login-font-02 : 1.8rem;
+    --login-font-03 : 2.1rem;
+    --login-font-04 : 4.8rem;
+}
+
+input{
+    outline: none;
+}
+
+h2, h3, p{
+    margin: 0;
+}
+
+.login-background {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../assets/images/login_background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -100;
+    font-family: 'Inter' 'sans-serif';
+}
+
+.txt-01{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: var(--login-font-04);
+    line-height: 58px;
+}
+
+.txt-02{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: var(--login-font-03);
+    line-height: 29px;   
+}
+
+.txt-03{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: var(--login-font-02);
+    line-height: 22px;
+}
+
+.container{
+    width: calc(1472px * 7/8);
+    height: calc(796px * 7/8);
+    min-height: calc(796px * 7/8);
+    justify-self: center;
+    align-self: center;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    margin: 5% 0;
+}
+
+.container .form-container{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+}
+
+.container .form-container form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* background: rgba(255, 255, 255, 0.1); */
+    background: #302235;
+    /* backdrop-filter: blur(15px); */
+}
+
+input{
+    width: calc(61.2% - 10%);
+    height: calc(7.54% - 10px);
+    border-radius: 100px;
+    padding: 5px 5%;
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+}
+
+button{
+    width: 61.2%;
+    height: 7.54%;
+    border-radius: 100px;
+    background: linear-gradient(270deg, #F9B804 0%, #FD8303 100%);;
+    color: black;
+    font-weight: 600 !important;
+    outline: none;
+}
+
+.container .sign-in-container{
+    left: 0;
+    width: 50%;
+    z-index: 2;
+    opacity: 1;
+}
+
+.container .sign-up-container{
+    left: 0;
+    width: 50%;
+    opacity: 0;
+    z-index: 1;
+}
+
+.agree{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+}
+
+.agree input{
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    margin-right: 10px;
+}
+
+.agree span{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    opacity: 0.8;
+}
+
+.overlay-container{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: transform 0.6s ease-in-out;
+    z-index: 100;
+}
+
+.overlay{
+    display: flex;
+    background: linear-gradient(90deg, #A75512 0%, #9E700D 100%);
+    backdrop-filter: blur(10px);
+    background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 0;
+    border-radius: 10px;
+    position: relative;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    transform:translateX(0);
+    color: #36121C;
+    transition: transform 0.6s ease-in-out;
+}
+
+.overlay-panel{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+}
+
+.overlay-right{
+    right: 0;
+    transform: translateX(0);
+}
+
+.overlay-left{
+    transform: translateX(-20%);
+}
+
+/* Animation */
+
+/* Move signin to the right */
+
+.container.right-panel-active .sign-in-container{
+    transform: translateX(100%);
+}
+
+.container.right-panel-active .overlay-container{
+    transform: translateX(-100%);
+}
+
+/* Bring sign up over sign in */
+
+.container.right-panel-active .sign-up-container{
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+}
+
+/* Move overlay back to right */
+
+.container.right-panel-active .overlay{
+    transform: translateX(50%);
+}
+
+.container.right-panel-active .overlay-left{
+    transform: translateX(0);
+}
+
+.container.right-panel-active .overlay-right{
+    transform: translateX(20%);
+}
+
+/* margin */
+.form-container .sign-in h3:nth-child(2){
+    margin-bottom: 6.37%;
+}
+.form-container .sign-in input,
+.form-container .sign-in p,
+.form-container .sign-in button{
+    margin-bottom: 4.66%;
+}
+
+.form-container .socials{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 34.02%;
+}
+
+.form-container .socials img{
+    width: 25.7%;   
+}
+
+.form-container .sign-up h2:nth-child(1),
+.form-container .sign-up input:not(.agree input),
+.form-container .sign-up .agree,
+.form-container .sign-up button,
+.form-container .sign-up p{
+    margin-bottom: 4.1%;
+}
+
+.overlay-panel p{
+    margin-bottom: 9.85%;
+}
+
+input{
+    color: white;
+}
+
+@media(max-width:1290px){
+    .container{
+        width: calc(1472px * 5/8);
+        height: calc(796px * 5/8);
+        min-height: calc(796px * 5/8);
+        margin-top: 10%;
+    }
+}
+
+@media(max-width:960px){
+    .container{
+        width: 90% !important;
+        height: 80%;
+        margin-top: 5%;
+    }
+
+    .sign-in-container{
+        width: 100% !important;
+        transform: translateX(0) !important;
+        opacity: 1 !important;
+    }
+
+    .sign-up-container{
+        width: 100% !important;
+        transform: translateX(0) !important;
+        opacity: 1 !important;
+    }
+
+    .overlay-container{
+        width: 100% !important;
+    }
+}

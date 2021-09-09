@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <div class="login-background">
+        <nav class="main-nav">
+            <a href="index.html" class="nav-logo">MWM</a>
+            <ul class="nav-list">
+                <li><a href="index.html" class="current-page">Home</a></li>
+                <li><a href="music-page.html">Music</a></li>
+                <li><a href="artist-page.html">Artists</a></li>
+                <li><a href="news-page.html">News</a></li>
+                <div class="nav-search-box">
+                <input class="search-text" type="text" name="" id="" />
+                <img
+                    class="icon-search icon"
+                    src="assets/images/search.svg"
+                    alt="search"
+                />
+                </div>
+            </ul>
+            <div class="nav-entry">
+                <a class="entry-login" href="login.html">Log in</a>
+                <a class="entry-signup" href="signup.html">Sign up</a>
+                <img
+                class="hamburger"
+                src="assets/images/hamburger.svg"
+                alt="hamburger"
+                />
+            </div>
+        </nav>
+        <div class="side-nav">
+            <button class="side-nav-close">x</button>
+            <ul class="side-nav-list">
+              <li><a href="index.html" class="current-page">Home</a></li>
+              <li><a href="music-page.html">Music</a></li>
+              <li><a href="artist-page.html">Artists</a></li>
+              <li><a href="news-page.html">News</a></li>
+              <div class="nav-entry">
+                <a class="entry-login" href="login.html">Log in</a>
+                <a class="entry-signup" href="signup.html">Sign up</a>
+            </div>
+            </ul>
+          </div>
+
+        <div class="container" id="container">
+            <div class="form-container sign-up-container">
+                <form action="#" class="sign-up">
+                    <h2 class="txt-01">Create Account</h2>
+                    <input type="email" placeholder="email" class="txt-03 input-email">
+                    <input type="password" placeholder="password" class="txt-03 input-pw">
+                    <input type="password" placeholder="Confirm password" class="txt-03 input-pw">
+                    <div class="agree">
+                        <input type='checkbox' name='agree' value='agree' />
+                        <span>I agree with TERMS & CONDITIONS</span>
+                    </div>
+                    <button class="btn-sign-up txt-02">Sign up</button>
+                    <p class="txt-03">Or continue with social media</p>
+                    <div class="socials">
+                        <img src="assets/images/google.png" alt="">
+                        <img src="assets/images/facebook.png" alt="">
+                        <img src="assets/images/instagram.png" alt="">
+                    </div>
+                </form>
+            </div>
+            <div class="form-container sign-in-container">
+                <form action="#" class="sign-in">
+                    <h2 class="txt-01">Welcome back</h2>
+                    <h3 class="txt-02">Login with your email account</h3>
+                    <input type="email" placeholder="email" class="txt-03 input-email">
+                    <input type="password" placeholder="password" class="txt-03 input-pw">
+                    <p class="txt-03">Forgot your password?</p>
+                    <button class="btn-sign-in txt-02">Log in</button>
+                    <p class="txt-03">Or continue with social media</p>
+                    <div class="socials">
+                        <img src="assets/images/google.png" alt="">
+                        <img src="assets/images/facebook.png" alt="">
+                        <img src="assets/images/instagram.png" alt="">
+                    </div>
+                </form>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h2 class="txt-01">Welcome Back!</h2>
+                        <p class="txt-02">To keep connected with us please login<br/>with your personal infomation </p>
+                        <button class="to-sign-up txt-02">Log in</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h2 class="txt-01">Hello, Friend</h2>
+                        <p class="txt-02">Enter your personal details and<br/>discover the best live music  </p>
+                        <button class="to-sign-in txt-02">Sign up now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>

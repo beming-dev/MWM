@@ -1,0 +1,22 @@
+{
+    "musics": [
+        {
+            "title": "FAULT LINE",
+            "singer": "MEEKA KATES",
+            "album": "FaultLine.jpg",
+            "audio": "FaultLine.mp3"
+        },
+        {
+            "title": "WATCHING YOU",
+            "singer": "ROBINSON",
+            "album": "WatchingYou.jpg",
+            "audio": "WatchingYou.mp3"
+        },
+        {
+            "title": "WHAT 2 DO",
+            "singer": "DEAN",
+            "album": "What2Do.jpg",
+            "audio": "What2Do.mp3"
+        }
+    ]
+}

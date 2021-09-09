@@ -1,0 +1,329 @@
+:root {
+  --main--default--margin: 4.1vw;
+  --player-font-01: 1.2rem;
+  --player-font-02: 2rem;
+  --content-font-01: 2.2rem;
+  --content-font-02: 2.4rem;
+  --content-font-03: 8rem;
+}
+
+.main-background {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: calc(100vh);
+  background-image: url("../assets/images/main_background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -100;
+}
+
+.content {
+  margin-left: calc(168 / 1920 * 100vw);
+  margin-top: calc(214 / 1080 * 100vh);
+}
+
+.content .des-01 {
+  font-family: "Cabin Condensed", sans-serif;
+  font-size: var(--content-font-02);
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 6px;
+  background-image: linear-gradient(to right, #ff8a00, #ffc746);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.content .des-02 {
+  margin-top: calc(14 / 1080 * 100vh);
+  margin-bottom: calc(28 / 1080 * 100vh);
+  font-size: var(--content-font-03);
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+  line-height: 124%;
+}
+
+.content .content-buttons {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content .content-buttons .content-add {
+  color: white;
+  width: 200px;
+  height: 61px;
+  font-size: var(--content-font-01);
+  border: 1px solid white;
+  border-radius: 61px;
+  background: transparent;
+  transition-duration: 0.5s;
+}
+
+.content .content-buttons .content-add:hover {
+  color: #4b1e57;
+  background-color: white;
+}
+
+.content .content-buttons .content-listen {
+  color: black;
+  width: 182px;
+  height: 61px;
+  font-size: var(--content-font-01);
+  border-radius: 61px;
+  background: linear-gradient(to right, #ff5c00, #ffcd00);
+  transition-duration: 0.5s;
+}
+
+.content .content-buttons .content-listen:hover {
+  background: white;
+  color: #ffcd00;
+}
+
+.player {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  height: 99px;
+  background: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.player .player-music {
+  width: 200px;
+  height: 61px;
+  display: flex;
+  flex-shrink: 0;
+  margin-left: var(--main--default--margin);
+}
+
+.player .player-music .music-introduce {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.player .player-music .music-album {
+  margin-right: 5%;
+  border-radius: 3px;
+}
+
+.player .player-music .music-introduce .music-title {
+  font-size: var(--player-font-02);
+  font-weight: 500;
+  font-style: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.player .player-music .music-introduce .music-singer {
+  font-size: var(--player-font-01);
+  font-weight: 300;
+  font-style: normal;
+}
+
+.player .player-play {
+  width: 650px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.player .player-play .player-play-button {
+  width: 87%;
+  /* width: 566px; */
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.player .player-play .player-play-button img {
+  width: 4%;
+}
+.player .player-play .player-play-button .icon3 {
+  width: 6%;
+}
+
+.player .player-play-time {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.player .player-play-time .time {
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--player-font-01);
+  line-height: 14px;
+}
+
+.player .player-play-time .my-progress-touch {
+  display: flex;
+  align-items: center;
+  width: 87%;
+  height: 15px;
+  margin: 0 20px;
+}
+
+.player .player-play-time .my-progress {
+  width: 100%;
+  height: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 3px;
+}
+
+.player .player-play-time .my-bar {
+  position: relative;
+  width: 0%;
+  height: 100%;
+  background-color: white;
+}
+
+.player .player-play-time .my-bar::after {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  content: "";
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.player .player-options {
+  width: 200px;
+  height: 31px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-shrink: 0;
+  margin-right: var(--main--default--margin);
+  position: relative;
+}
+
+.player .player-options img {
+  width: 15%;
+}
+
+.player .player-options .sound-slider {
+  width: 100px;
+  height: 5px;
+  position: absolute;
+  top: -50%;
+  left: 10%;
+}
+
+.icon {
+  transition-duration: 0.5s;
+}
+.icon:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 1200px), (max-height: 600px) {
+  html {
+    font-size: 8px;
+  }
+
+  .player .player-music {
+    width: 150px;
+  }
+
+  .player .player-play {
+    width: 487.5px;
+  }
+
+  .player .player-options {
+    width: 150px;
+  }
+}
+
+@media (max-width: 950px) {
+  html {
+    font-size: 7px;
+  }
+
+  .player .player-music {
+    width: 120px;
+    margin-left: 2vw;
+  }
+
+  .player .player-play {
+    width: 390px;
+  }
+
+  .player .player-options {
+    width: 120px;
+    margin-right: 2vw;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --logo--font--size: 7vw;
+  }
+
+  html {
+    font-size: 6px !important;
+  }
+
+  .main-nav {
+    height: auto !important;
+  }
+
+  .main-background {
+    height: 100vh;
+    background-image: url("../assets/images/mobile_background.jpg");
+  }
+
+  .player {
+    display: none;
+  }
+
+  .main-background .content {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    margin: 0;
+    position: absolute;
+    top: 20%;
+  }
+
+  .content .des-01 {
+    font-size: calc(var(--logo--font--size) * 3 / 7);
+  }
+
+  .content .des-02 {
+    font-size: calc(var(--logo--font--size) * 88 / 63);
+  }
+
+  .content .content-buttons {
+    margin: 0;
+    width: calc(var(--logo--font--size) * 8);
+  }
+
+  .content .content-buttons .content-add {
+    width: calc(var(--logo--font--size) * 8 * 194 / 445);
+    height: 8vw;
+    font-size: 3vw;
+  }
+
+  .content .content-buttons .content-listen {
+    width: calc(var(--logo--font--size) * 8 * 225 / 445);
+    height: 8vw;
+    font-size: 3vw;
+  }
+}

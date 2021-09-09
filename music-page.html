@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/music_page.css" />
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/carousel.css">
+  </head>
+  <body>
+    <div class="music-background">
+      <nav class="main-nav">
+        <a href="index.html" class="nav-logo">MWM</a>
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="music-page.html" class="current-page">Music</a></li>
+          <li><a href="artist-page.html">Artists</a></li>
+          <li><a href="news-page.html">News</a></li>
+          <div class="nav-search-box">
+            <input class="search-text" type="text" name="" id="" />
+            <img
+              class="icon-search icon"
+              src="assets/images/search.svg"
+              alt="search"
+            />
+          </div>
+        </ul>
+        <div class="nav-entry">
+          <a class="entry-login" href="login.html">Log in</a>
+          <a class="entry-signup" href="signup.html">Sign up</a>
+          <img
+            class="hamburger"
+            src="assets/images/hamburger.svg"
+            alt="hamburger"
+          />
+        </div>
+      </nav>
+      <div class="side-nav">
+        <button class="side-nav-close">x</button>
+        <ul class="side-nav-list">
+          <li><a href="index.html" class="current-page">Home</a></li>
+          <li><a href="music-page.html">Music</a></li>
+          <li><a href="artist-page.html">Artists</a></li>
+          <li><a href="news-page.html">News</a></li>
+          <div class="nav-entry">
+            <a class="entry-login" href="login.html">Log in</a>
+            <a class="entry-signup" href="signup.html">Sign up</a>
+          </div>
+        </ul>
+      </div>
+
+      <div class="grid">
+        <div class="main">
+          <span class="title">FEATURED CONTENT</span>
+          <span class="des-01 des">Upcoming 2021</span>
+          <span class="des-02 des">Music Festivals near you</span>
+          <div class="gallery">
+            <div class="gallery-controls">
+              <div class="gallery-container">
+                <img class="gallery-item gallery-item-1" src="assets/images/albums/carousel1.jpg" data-index="1">
+                <img class="gallery-item gallery-item-2" src="assets/images/albums/carousel2.jpg" data-index="2">
+                <img class="gallery-item gallery-item-3" src="assets/images/albums/carousel3.jpg" data-index="3">
+              </div>
+            </div>
+          </div>  
+        </div>
+
+        <div class="songs">
+          <audio src="" id="audio-songs"></audio>
+          <h2>Latest Songs Releases</h2>
+          <div class="songs-table">
+            <!-- 1 -->
+              <span class="tr tr1"></span>
+              <span class="tr tr2"></span>
+              <span class="tr tr3">Track/Artist(s)</span>
+              <span class="tr tr4">Album</span>
+              <span class="tr tr5">Time</span>
+              <span class="tr tr6">Plays</span>
+              <span class="tr tr7">Add</span>
+              
+            <!-- 2 -->
+              <div class="no">01</div>
+              <img src="assets/images/albums/SearchingForNirvana.jpg" alt="" class="table-album"/>
+              <img src="assets/images/player/play.svg" alt="" class="table-play-icon" data-music="SearchingForNirvana" data-idx="1"/>
+              <div class="table-music">
+                <span class="music-title">Searching for nirvana</span>
+                <span class="music-singer">Royal & the Serpent</span>
+              </div>
+              <span class="table-album-type songs-text">Original</span>
+              <span class="table-time songs-text">4:26</span>
+              <span class="table-plays songs-text">10k</span>
+              <img src="assets/images/player/heart.svg" alt="" class="table-heart" />
+              <img src="assets/images/etc.png" alt="" class="etc">
+            <!-- 3 -->
+              <div class="no">02</div>
+              <img src="assets/images/albums/LostCause.jpg" alt="" class="table-album"/>
+              <img src="assets/images/player/play.svg" alt="" class="table-play-icon" data-music="LostCause" data-idx="2"/>
+              <div class="table-music">
+                <span class="music-title">Lost Cause</span>
+                <span class="music-singer">Billie Eilish</span>
+              </div>
+              <span class="table-album-type songs-text">Single</span>
+              <span class="table-time songs-text">3:34</span>
+              <span class="table-plays songs-text">23k</span>
+              <img src="assets/images/player/heart.svg" alt="" class="table-heart" />
+              <img src="assets/images/etc.png" alt="" class="etc">
+            <!-- 4 -->
+              <div class="no">03</div>  
+              <img src="assets/images/albums/BestIsYetToCome.jpg" alt="" class="table-album"/>
+              <img src="assets/images/player/play.svg" alt="" class="table-play-icon" data-music="BestIsYetToCome" data-idx="3"/>
+              <div class="table-music">
+                <span class="music-title">Best Is Yet To Come</span>
+                <span class="music-singer">Gryffin, Kyle Reynolds</span>
+              </div>
+              <span class="table-album-type songs-text">Original</span>
+              <span class="table-time songs-text">4:03</span>
+              <span class="table-plays songs-text">14k</span>
+              <img src="assets/images/player/heart.svg" alt="" class="table-heart" />
+              <img src="assets/images/etc.png" alt="" class="etc">
+            <!-- 5 -->
+            <div class="no">04</div>
+              <img src="assets/images/albums/Baptize.jpg" alt="" class="table-album"/>
+              <img src="assets/images/player/play.svg" alt="" class="table-play-icon" data-music="Baptize" data-idx="4"/>
+              <div class="table-music">
+                <span class="music-title">Baptize</span>
+                <span class="music-singer">Atreyu</span>
+              </div>
+              <span class="table-album-type songs-text">Single</span>
+              <span class="table-time songs-text">3:56</span>
+              <span class="table-plays songs-text">45k</span>
+              <img src="assets/images/player/heart.svg" alt="" class="table-heart" />
+              <img src="assets/images/etc.png" alt="" class="etc">
+            <!-- 6 -->
+            <div class="no">05</div>
+              <img src="assets/images/albums/BlueWeekend.jpg" alt="" class="table-album"/>
+              <img src="assets/images/player/play.svg" alt="" class="table-play-icon" data-music="BlueWeekend" data-idx="5"/>
+              <div class="table-music">
+                <span class="music-title">Blue Weekend</span>
+                <span class="music-singer">Wolf Alice</span>
+              </div>
+              <span class="table-album-type songs-text">Mini</span>
+              <span class="table-time songs-text">4:17</span>
+              <span class="table-plays songs-text">8k</span>
+              <img src="assets/images/player/heart.svg" alt="" class="table-heart" />
+              <img src="assets/images/etc.png" alt="" class="etc">
+          </div>
+        </div>
+          <div class="player">
+            <div class="music">
+              <img src="" alt="s">
+              <span>singer</span>
+            </div>
+            <div class="player-play-button">
+              <img
+                class="icon icon-prev"
+                src="assets/images/player/previous_button.svg"
+                alt=""
+              />
+              <img
+                class="icon music-start icon3"
+                src="assets/images/player/play.svg"
+                alt=""
+                style="display: none"
+              />
+              <img
+                class="icon music-pause icon3"
+                src="assets/images/player/pause.svg"
+                alt=""
+              />
+              <img
+                class="icon icon-next"
+                src="assets/images/player/next_button.svg"
+                alt=""
+              />
+            </div>
+            <div class="player-play-time">
+              <div class="left-time time" style="color: white">00:00</div>
+              <div class="my-progress-touch">
+                <div class="my-progress">
+                  <div class="my-bar"></div>
+                </div>
+              </div>
+              <div class="right-time time" style="color: white">00:00</div>
+            </div>
+        </div>
+
+        <div class="noteworthy-albums">
+          <h2>Noteworthy-Albums</h2>
+          <div class="album-list">
+              <div class="album-box album-box01">
+                <img src="assets/images/albums/SixFeetUnder.jpg" alt="" class="album-image">
+                <span class="album-name">Six Feet Under</span>
+                <span class="album-singer">Billie Eilish</span>
+              </div>
+              <div class="album-box album-box02">
+                <img src="assets/images/albums/LoveStory.jpg" alt="" class="album-image">
+                <span class="album-name">Love Story</span>
+                <span class="album-singer">Taylor Swift</span>
+              </div>
+              <div class="album-box album-box03">
+                <img src="assets/images/albums/PopularLoner.jpg" alt="" class="album-image">
+                <span class="album-name">Popular Loner</span>
+                <span class="album-singer">Rod Wave</span>
+              </div>
+              <div class="album-box album-box04">
+                <img src="assets/images/albums/OceanEyes.jpg" alt="" class="album-image">
+                <span class="album-name">Ocean Eyes</span>
+                <span class="album-singer">Billie Eilish</span>
+              </div>
+          </div>
+        </div>
+        <div class="recommended-albums">
+          <h2>Recommended Albums</h2>
+          <div class="album-images">
+            <img src="assets/images/albums/RAlbum1.jpg" alt="" class="image image01">
+            <div class="cover-big">
+              <div>THE TOP 10</div>
+              <div>GLOBAL</div>
+            </div>
+            <div class="image-side">
+              <img src="assets/images/albums/RAlbum2.jpg" alt="" class="image image02">
+              <div class="cover-small cover-01">
+                <div>THE TOP 10</div>
+                <div>GLOBAL</div>
+              </div>
+              <img src="assets/images/albums/RAlbum3.jpg" alt="" class="image image03">
+              <div class="cover-small cover-02">
+                <div>THE TOP 10</div>
+                <div>GLOBAL</div>
+              </div>
+            </div>
+            <div class="image-side">
+              <img src="assets/images/albums/RAlbum4.jpg" alt="" class="image image04">
+              <div class="cover-small cover-03">
+                <div>THE TOP 10</div>
+                <div>GLOBAL</div>
+              </div>
+              <img src="assets/images/albums/RAlbum5.jpg" alt="" class="image image05">
+              <div class="cover-small cover-04">
+                <div>THE TOP 10</div>
+                <div>GLOBAL</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer-grid">
+          <div class="logo-box">
+            <span class="logo">MWM</span>
+            <span class="des1">Discover the ebst live music, tailored to your <br/>music taste</span>
+            <span class="des2">Copyright 2021 MWM, INC. Terms & Privacy</span>
+          </div>
+          <div class="more">
+            <div class="more-blog">
+              <span>More on The Blog</span>
+              <a href="#" class="des1">Contributors & Writers</a>
+              <a href="#" class="des2">More on The Blog</a>
+              <a href="#" class="des3">Privacy Policy</a>
+            </div>
+            <div class="more-mwm">
+              <span>More on MWM</span>
+              <a href="#" class="des1">The Team</a>
+              <a href="#" class="des2">Jobs</a>
+              <a href="#" class="des3">Press</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <script src="js/carousel.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/small_player.js"></script>
+    <script src="js/music_page.js"></script>
+  </body>
+</html>
